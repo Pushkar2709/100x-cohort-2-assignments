@@ -6,7 +6,14 @@
 */
 
 function countVowels(str) {
-    // Your code here
+  // Your code here
+  let ans = 0;
+  str.toLowerCase().split("").forEach(ch => {
+    if ('aeiou'.indexOf(ch) != -1) {
+      ans++;
+    }
+  });
+  return ans;
 }
 
 module.exports = countVowels;
